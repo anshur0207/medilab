@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Symptoms-medilab</title>
+  <title>Edit Profile</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -45,33 +45,39 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center ">
 
-      <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1>
+      <h1 class="logo me-auto"><a href="dashboard.html">Medilab</a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="dashboard.html">Home</a></li>
           
           <li><a class="nav-link scrollto" href="results.html" >Tests</a></li>
           <li><a class="nav-link scrollto" href="symptom.html">Symptoms</a></li>
           
           
-          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
+      <a href="index.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Logout</a>
     </div>
+
   </header><!-- End Header -->
+  
   <div class="container register">
     <div class="row">
       <div class="col-md-3 register-left">
-        <img src="doc.png" style="height: 200px; width: 200px;" alt="" />
-        <h3>Welcome</h3>
-        <p>Life is Journey</p>
-        <input type="submit" name="" value="Login" onclick="document.location='login.html'"/><br />
-      </div>
+        
+        <img src="doc-1.png" style="height: 250px; width: 250px;" alt="" />
+        <h2>At Your Quick Service.</h2>
+        
+     
+      </div> 
+   
+    
+   
       <div class="col-md-9 register-right">
-        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        
+        <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
           <li class="nav-item">
             <a
               class="nav-link active"
@@ -96,7 +102,13 @@
               >Others</a
             >
           </li>
-        </ul>
+        </ul> -->
+     
+       
+        <div>
+         
+
+        
         <div class="tab-content" id="myTabContent">
           <div
             class="tab-pane fade active show"
@@ -104,7 +116,7 @@
             role="tabpanel"
             aria-labelledby="home-tab"
           >
-            <h3 class="register-heading">Apply as a Patient</h3>
+            <h3 class="register-heading">Edit Profile</h3>
             <div class="row register-form">
               <div class="col-md-6">
                 <div class="form-group">
@@ -112,7 +124,8 @@
                     type="text"
                     class="form-control"
                     placeholder="First Name *"
-                    value=""
+                    value="First Name"
+                    disabled
                   />
                 </div>
                 <div class="form-group">
@@ -120,6 +133,15 @@
                     type="text"
                     class="form-control"
                     placeholder="Last Name *"
+                    value="Last Name"
+                    disabled
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Current Password"
                     value=""
                   />
                 </div>
@@ -127,18 +149,18 @@
                   <input
                     type="password"
                     class="form-control"
-                    placeholder="Password *"
+                    placeholder="New Password"
                     value=""
                   />
                 </div>
                 <div class="form-group">
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Confirm Password *"
-                    value=""
-                  />
-                </div>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Confirm New Password"
+                      value=""
+                    />
+                  </div>
                 <div class="form-group">
                   <div class="maxl">
                     <label class="radio inline">
@@ -163,7 +185,7 @@
                     type="email"
                     class="form-control"
                     placeholder="Your Email *"
-                    value=""
+                    value="youremail@example.com"
                   />
                 </div>
                 <div class="form-group">
@@ -174,11 +196,11 @@
                     name="txtEmpPhone"
                     class="form-control"
                     placeholder="Your Phone *"
-                    value=""
+                    value="98300203"
                   />
                 </div>
                 
-                <a href="dashboard.html" class="btnRegister text-center">Register</a>
+                <input type="submit" class="btnRegister" value="Edit" onclick="document.location='dashboard.html'" />
               </div>
             </div>
           </div>
@@ -188,86 +210,13 @@
             role="tabpanel"
             aria-labelledby="profile-tab"
           >
-            <h3 class="register-heading">Apply as a Others</h3>
-            <div class="row register-form">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="First Name *"
-                    value=""
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Last Name *"
-                    value=""
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email *"
-                    value=""
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    maxlength="10"
-                    minlength="10"
-                    class="form-control"
-                    placeholder="Phone *"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Password *"
-                    value=""
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Confirm Password *"
-                    value=""
-                  />
-                </div>
-                <div class="form-group">
-                  <select class="form-control">
-                    <option class="hidden" selected="" disabled="">
-                     Who are You?
-                    </option>
-                    <option>Doctor?</option>
-                    <option>Lab Assistant</option>
-                    <option>Others</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="`Answer *"
-                    value=""
-                  />
-                </div>
-                <input type="submit" class="btnRegister" value="Register" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <script type="text/javascript"></script>
 
@@ -292,7 +241,7 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="dashboard.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
@@ -366,7 +315,7 @@
     color: black;
   }
   a:hover{
-    color:rgb(255, 255, 255);
+    color:red;
   }
 
 
